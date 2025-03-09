@@ -18,6 +18,7 @@ shortenForm.addEventListener('submit', async (e) => {
     });
 
     const jsonResponse = await response.json();
+    getShortUrls();
 
     if (response.status === 500) {
         alert('Internal server error');

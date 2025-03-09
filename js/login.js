@@ -1,10 +1,10 @@
-const loginForm = document.getElementById('login-form');
+const loginForm = document.getElementById('loginForm');
 
 loginForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const email = loginForm.querySelector('#login-form > input[name="email"]').value;
-    const password = loginForm.querySelector('#login-form > input[name="password"]').value;
+    const email = loginForm.querySelector('#loginEmail').value;
+    const password = loginForm.querySelector('#loginPass').value;
 
     const url = 'https://www.shorten-url-api.infobrains.club/api/public/auth/login'
     const result = await fetch(url, {

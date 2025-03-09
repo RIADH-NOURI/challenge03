@@ -1,10 +1,10 @@
-const registerForm = document.getElementById('register-form');
+const registerForm = document.getElementById('signupForm');
 
 registerForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const name = registerForm.querySelector('input[name="name"]').value;
-    const email = registerForm.querySelector('#register-form > input[name="email"]').value;
-    const password = registerForm.querySelector('#register-form > input[name="password"]').value;
+    const name = registerForm.querySelector('#signupUsername').value;
+    const email = registerForm.querySelector('#signupEmail').value;
+    const password = registerForm.querySelector('#signupPass').value;
 
     const url = 'https://www.shorten-url-api.infobrains.club/api/public/auth/register'
 

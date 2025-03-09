@@ -46,6 +46,8 @@ const getShortUrls = async () => {
                 </div>
                 <div class="shorten-url__clicks">
                     <p><strong>Clicks:</strong> ${shortUrl.clicks}</p>
+                    <p><strong>id:</strong> ${shortUrl.id}</p>
+                    
                 </div>
                 <div class="shorten-url__created-at">
                     <p><strong>Created At:</strong> ${new Date(shortUrl.createdAt).toLocaleString()}</p>
@@ -53,6 +55,9 @@ const getShortUrls = async () => {
                 <div class="shorten-url__updated-at">
                     <p><strong>Updated At:</strong> ${new Date(shortUrl.updatedAt).toLocaleString()}</p>
                 </div>
+                <button onClick="updateShortUrl(${shortUrl.id})"></button>
+                <button onClick="deleteShortUrl(${shortUrl.id})"></button>
+                
             </div>
             `;
             shortenUrlList.appendChild(li);
