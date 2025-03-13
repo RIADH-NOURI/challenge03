@@ -19,6 +19,7 @@ body {
 
 .container {
     display: flex;
+    flex: 1;
     width: 800px;
     height: 600px;
     max-width: 99%;
@@ -182,3 +183,14 @@ p {
     color: #5e7eb6;
     font-size: 0.9em;
 }
+.logout-btn {
+    margin-right: 10px;
+    background-color: rgb(219, 38, 38);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
