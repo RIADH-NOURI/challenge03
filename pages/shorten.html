@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shorten</title>
     <script src="../js/private.js"></script>
+    <link rel="stylesheet" href="../css/shorten.css">
+
 </head>
 <body>
-    <a href="/pages/logout.html">Logout</a>
     <div class="container">
-        <h1>Create a shortcut for your URL</h1>
-        <form id="shorten-form" method="post">
-            <input type="url" name="url" placeholder="Enter your URL" required>
-            <button type="submit">Shorten</button>
-        </form>
-        <div id="shorten-result"></div>
-    </div>
-    <div class="container">
-        <h1>Your shortened URLs</h1>
-        <div id="shorten-list"></div>
+        <a href="/pages/logout.html" class="logout-btn">Logout</a>
+        <div class="left-container">
+            <h1>Create a shortcut for your URL</h1>
+            <form id="shorten-form" method="post">
+                <input type="url" name="url" placeholder="Enter your URL" required>
+                <button type="submit">Shorten</button>
+            </form>
+            <div id="shorten-result"></div>
+        </div>
+
+        <div class="right-container">
+            <h1>Your shortened URLs</h1>
+            <div id="shorten-list"></div>
+        </div>
     </div>
     <script src="../js/createShortUrl.js"></script>
     <script src="../js/getShortUrls.js"></script>
+    <script src="../js/deleteShortUrl.js"></script>
+    <script src="../js/updateShortUrl.js"></script>
 </body>
 </html>
