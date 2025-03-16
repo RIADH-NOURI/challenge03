@@ -31,6 +31,6 @@ loginForm.addEventListener('submit', async (e) => {
     if (result.status === 200) {
         const token = jsonResponse.data.accessToken;
         localStorage.setItem('token', token);
-        window.location.href = '/pages/shorten.html';
+        window.location.href = '../pages/shorten.html';
     }
 });
