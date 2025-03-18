@@ -2,7 +2,7 @@
     () => {
         const token = localStorage.getItem('token')
         if (token) {
-            window.location.href = '../shorten.html'
+            window.location.href = './shorten.html'
         }
     }
 )()
